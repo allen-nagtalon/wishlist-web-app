@@ -58,6 +58,12 @@
 			<artifactId>jjwt-jackson</artifactId>
 			<version>${jjwt.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.allennagtalon</groupId>
+			<artifactId>frontend</artifactId>
+			<version>${project.version}</version>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
