@@ -19,15 +19,16 @@
 	</properties>
 	<modules>
 		<module>backend</module>
+		<module>frontend</module>
 	</modules>
 	<profiles>
 		<profile>
 				<id>dev</id>
 				<activation>
-						<activeByDefault>true</activeByDefault>
+					<activeByDefault>true</activeByDefault>
 				</activation>
 				<properties>
-						<spring.profiles.active>dev</spring.profiles.active>
+					<spring.profiles.active>dev</spring.profiles.active>
 				</properties>
 		</profile>
 	</profiles>
