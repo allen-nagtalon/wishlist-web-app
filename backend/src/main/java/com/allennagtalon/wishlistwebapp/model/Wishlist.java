@@ -37,4 +37,12 @@ public class Wishlist {
   private String title;
 
   private String description;
+
+  @ManyToMany
+  @JoinTable(
+    name = "list_content",
+    joinColumns = @JoinColumn(name = "wishlist_id"),
+    inverseJoinColumns = @JoinColumn(name = "wish_id")
+  )
+  private Set<Wish> listContents;
 }
