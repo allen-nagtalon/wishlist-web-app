@@ -16,7 +16,7 @@ public class WishlistController {
   @Autowired
   private WishlistRepository wishlistRepository;
 
-  @GetMapping(path="/{userId}")
+  @GetMapping(path="/user/{userId}")
   public @ResponseBody Iterable<Wishlist> getWishlistsByUserId(@PathVariable Integer userId) {
     return wishlistRepository.findByAuthorId(userId);
   }

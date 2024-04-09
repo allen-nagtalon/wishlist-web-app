@@ -37,7 +37,7 @@ public class WishController {
     return wishRepository.findAll();
   }
 
-  @GetMapping(path="/{wishlistId}")
+  @GetMapping(path="/wishlist/{wishlistId}")
   public @ResponseBody Iterable<Wish> getAllWishesByWishlistId(@PathVariable Integer wishlistId) {
     return wishRepository.findWishesByWishlistsId(wishlistId);
   }
